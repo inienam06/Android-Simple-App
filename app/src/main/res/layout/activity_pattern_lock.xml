@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.PatternLockActivity">
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/plView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        app:normalStateColor="@color/md_blue_500"
+        app:correctStateColor="@color/md_green_600"
+        app:wrongStateColor="@color/md_red_700" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bClear"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Clear"
+        android:layout_below="@id/plView"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"/>
+</RelativeLayout>

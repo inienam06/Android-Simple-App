@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.PasscodeActivity"
+    android:fitsSystemWindows="true">
+    <com.hanks.passcodeview.PasscodeView
+        android:id="@+id/passcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        app:firstInputTip="Enter a passcode of 6 digits "
+        app:correctStateColor="@color/md_green_600"
+        app:wrongStateColor="@color/md_red_600"
+        app:normalStateColor="@color/white"
+        app:numberTextColor="@color/md_black_1000"
+        app:passcodeLength="6"
+        app:passcodeViewType="set_passcode"/>
+</RelativeLayout>

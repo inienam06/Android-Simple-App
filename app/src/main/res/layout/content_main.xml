@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Views.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:padding="12dp">
+
+    <GridView
+        android:id="@+id/menu"
+        android:numColumns="3"
+        android:verticalSpacing="12dp"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:stretchMode="spacingWidthUniform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
